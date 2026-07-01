@@ -1,0 +1,311 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <script>
+        const status = localStorage.getItem("loggedIn");
+
+        if (status !== "true") {
+            window.location.href = "pages/account/login.html";
+        }
+    </script>
+
+    <title>រសជាតិខ្មែរ | Khmer Taste</title>
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="assets/images/branding/favicon.png"
+    >
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                រសជាតិខ្មែរ
+            </a>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/general/about.html">About</a></li>
+                    <li><a href="pages/menu/menu.html">Menu</a></li>
+                    <li><a href="pages/services/services.html">Services</a></li>
+                    <li><a href="pages/general/gallery.html">Gallery</a></li>
+                    <li><a href="pages/general/contact.html">Contact</a></li>
+                    <li><a href="pages/account/profile.html">Profile</a></li>
+                    <li><a href="pages/account/login.html">Login</a></li>
+
+                    <li>
+                        <a href="pages/account/register.html" class="btn">
+                            Register
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Discover Authentic Khmer Food</h1>
+
+                    <p>
+                        ស្វែងយល់ពីរសជាតិម្ហូបខ្មែរដ៏ឆ្ងាញ់ និងសេវាកម្ម
+                        ប្រកបដោយភាពកក់ក្តៅ។ Enjoy traditional Cambodian
+                        dishes prepared with care.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="pages/menu/menu.html" class="btn">
+                            Explore Menu
+                        </a>
+
+                        <a
+                            href="pages/services/reservation.html"
+                            class="btn btn-outline"
+                        >
+                            Book a Table
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-title">
+                    <span>Popular Menu</span>
+
+                    <h2>ម្ហូបខ្មែរពេញនិយម</h2>
+
+                    <p>
+                        Explore some of our most-loved traditional Khmer dishes.
+                    </p>
+                </div>
+
+                <div class="food-grid">
+                    <article class="food-card">
+                        <img
+                            src="assets/images/foods/main-dishes/fish-amok.jpg"
+                            alt="Fish Amok"
+                        >
+
+                        <div class="food-card-content">
+                            <h3>អាម៉ុកត្រី</h3>
+
+                            <div class="english-name">
+                                Fish Amok
+                            </div>
+
+                            <p>
+                                Fish cooked with coconut milk and fragrant
+                                Khmer spices.
+                            </p>
+
+                            <div class="food-card-footer">
+                                <span class="price">$5.50</span>
+
+                                <a
+                                    href="pages/services/order.html"
+                                    class="btn"
+                                >
+                                    Order
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="food-card">
+                        <img
+                            src="assets/images/foods/main-dishes/beef-lok-lak.jpg"
+                            alt="Beef Lok Lak"
+                        >
+
+                        <div class="food-card-content">
+                            <h3>ឡុកឡាក់សាច់គោ</h3>
+
+                            <div class="english-name">
+                                Beef Lok Lak
+                            </div>
+
+                            <p>
+                                Tender stir-fried beef served with vegetables
+                                and lime sauce.
+                            </p>
+
+                            <div class="food-card-footer">
+                                <span class="price">$6.00</span>
+
+                                <a
+                                    href="pages/services/order.html"
+                                    class="btn"
+                                >
+                                    Order
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="food-card">
+                        <img
+                            src="assets/images/foods/noodle-dishes/nom-banh-chok.jpg"
+                            alt="Khmer Rice Noodles"
+                        >
+
+                        <div class="food-card-content">
+                            <h3>នំបញ្ចុកខ្មែរ</h3>
+
+                            <div class="english-name">
+                                Khmer Rice Noodles
+                            </div>
+
+                            <p>
+                                Traditional rice noodles with curry gravy,
+                                fresh herbs and vegetables.
+                            </p>
+
+                            <div class="food-card-footer">
+                                <span class="price">$3.50</span>
+
+                                <a
+                                    href="pages/services/order.html"
+                                    class="btn"
+                                >
+                                    Order
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-title">
+                    <span>What We Offer</span>
+
+                    <h2>សេវាកម្មរបស់យើង</h2>
+
+                    <p>
+                        Enjoy convenient restaurant services for meals,
+                        events and celebrations.
+                    </p>
+                </div>
+
+                <div class="service-grid">
+                    <a href="pages/menu/menu.html" class="service-card">
+                        <div class="service-icon">🍲</div>
+
+                        <h3>Fresh Khmer Food</h3>
+
+                        <p>
+                            Traditional Khmer meals prepared with fresh ingredients.
+                        </p>
+
+                        <span class="service-link">
+                            Explore Menu →
+                        </span>
+                    </a>
+
+                    <a href="pages/services/delivery.html" class="service-card">
+                        <div class="service-icon">🛵</div>
+
+                        <h3>Fast Delivery</h3>
+
+                        <p>
+                            Order your favorite Khmer dishes and receive them at your home.
+                        </p>
+
+                        <span class="service-link">
+                            View Delivery →
+                        </span>
+                    </a>
+
+                    <a href="pages/services/catering.html" class="service-card">
+                        <div class="service-icon">🎉</div>
+
+                        <h3>Catering Service</h3>
+
+                        <p>
+                            Choose Khmer food packages for meetings, weddings and events.
+                        </p>
+
+                        <span class="service-link">
+                            View Catering →
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>រសជាតិខ្មែរ</h3>
+
+                    <p>
+                        Authentic Khmer food and friendly service in a
+                        welcoming environment.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>Quick Links</h3>
+
+                    <ul class="footer-links">
+                        <li>
+                            <a href="pages/menu/menu.html">
+                                Menu
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="pages/services/reservation.html">
+                                Reservation
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="pages/services/delivery.html">
+                                Delivery
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="pages/general/faq.html">
+                                FAQ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Contact</h3>
+
+                    <p>Phnom Penh, Cambodia</p>
+                    <p>Phone: +855 12 345 678</p>
+                    <p>Email: info@khmertaste.com</p>
+                </div>
+            </div>
+
+            <div class="copyright">
+                © 2026 Khmer Taste. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
