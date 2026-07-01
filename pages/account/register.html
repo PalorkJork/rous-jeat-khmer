@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register | Khmer Taste</title>
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="../../assets/images/branding/favicon.png"
+    >
+
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/forms.css">
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container navbar">
+            <a href="../index.html" class="logo">
+                រសជាតិខ្មែរ
+            </a>
+
+            <nav>
+                <ul class="nav-links">
+                    <li>
+                        <a href="../index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../general/about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../menu/menu.html">
+                            Menu
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../services/services.html">
+                            Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../general/gallery.html">
+                            Gallery
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../general/contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../account/login.html">
+                            Login
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="../account/register.html"
+                            class="btn"
+                        >
+                            Register
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="account-section">
+            <div class="account-card">
+                <h1>
+                    Create an Account
+                </h1>
+
+                <p class="account-subtitle">
+                    បង្កើតគណនីថ្មី
+                </p>
+
+                <form action="#" method="post">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="first-name">
+                                First Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="first-name"
+                                name="first-name"
+                                placeholder="Enter first name"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="last-name">
+                                Last Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="last-name"
+                                name="last-name"
+                                placeholder="Enter last name"
+                                required
+                            >
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="+855 ..."
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="example@email.com"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">
+                            Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Create a password"
+                            minlength="6"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm-password">
+                            Confirm Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="confirm-password"
+                            name="confirm-password"
+                            placeholder="Confirm your password"
+                            minlength="6"
+                            required
+                        >
+                    </div>
+
+                    <div class="remember-row">
+                        <div class="remember-option">
+                            <input
+                                type="checkbox"
+                                id="terms"
+                                name="terms"
+                                required
+                            >
+
+                            <label for="terms">
+                                I agree to the terms and conditions
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn">
+                        Create Account
+                    </button>
+
+                    <p class="account-link">
+                        Already have an account?
+
+                        <a href="login.html">
+                            Login here
+                        </a>
+                    </p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const form = document.querySelector("form");
+
+        form.addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            const firstName = document.getElementById("first-name").value;
+            const lastName = document.getElementById("last-name").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            const confirmPassword =
+                document.getElementById("confirm-password").value;
+
+            if (password !== confirmPassword) {
+                alert("Passwords do not match!");
+                return;
+            }
+
+            const phone = document.getElementById("phone").value;
+
+            // Get all existing users
+            let users = JSON.parse(localStorage.getItem("users")) || [];
+
+            // Check if email already exists
+            const existingUser = users.find(user => user.email === email);
+
+            if (existingUser) {
+                alert("This email is already registered.");
+                return;
+            }
+
+            // Create new user
+            const newUser = {
+                firstName,
+                lastName,
+                phone,
+                email,
+                password
+            };
+
+            // Save the new user
+            users.push(newUser);
+
+            localStorage.setItem("users", JSON.stringify(users));
+
+            window.location.href = "login.html";
+        });
+    </script>
+
+</body>
+</html>

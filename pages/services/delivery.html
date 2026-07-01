@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Food Delivery | Khmer Taste</title>
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="../../assets/images/branding/favicon.png"
+    >
+
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/forms.css">
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container navbar">
+            <a href="../index.html" class="logo">
+                រសជាតិខ្មែរ
+            </a>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../general/about.html">About</a></li>
+                    <li><a href="../menu/menu.html">Menu</a></li>
+                    <li><a href="../services/services.html">Services</a></li>
+                    <li><a href="../general/gallery.html">Gallery</a></li>
+                    <li><a href="../general/contact.html">Contact</a></li>
+                    <li><a href="../account/login.html">Login</a></li>
+
+                    <li>
+                        <a href="../account/register.html" class="btn">
+                            Register
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-banner services-banner">
+            <div class="container">
+                <h1>Food Delivery</h1>
+                <p>សេវាកម្មដឹកជញ្ជូនអាហារ</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="service-detail-grid">
+                    <div class="service-detail-image">
+                        <img
+                            src="../../assets/images/services/delivery-service.jpg"
+                            alt="Khmer food delivery service"
+                        >
+                    </div>
+
+                    <div class="service-detail-content">
+                        <h2>Enjoy Khmer Food at Your Home</h2>
+
+                        <p>
+                            Order your favorite traditional Khmer dishes
+                            and receive fresh food at your home or office.
+                        </p>
+
+                        <ul class="info-list">
+                            <li>
+                                <span>✓</span>
+                                Delivery available in Phnom Penh
+                            </li>
+
+                            <li>
+                                <span>✓</span>
+                                Delivery time: approximately 30 to 60 minutes
+                            </li>
+
+                            <li>
+                                <span>✓</span>
+                                Delivery fee starts from $1.50
+                            </li>
+
+                            <li>
+                                <span>✓</span>
+                                Food is packed carefully before delivery
+                            </li>
+                        </ul>
+
+                        <a href="../menu/menu.html" class="btn">
+                            Browse Menu
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <div class="container">
+                <form class="form-card" action="#" method="post">
+                    <h2>Delivery Request</h2>
+
+                    <p class="form-description">
+                        បំពេញព័ត៌មានរបស់អ្នកសម្រាប់ការដឹកជញ្ជូន
+                    </p>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="customer-name">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="customer-name"
+                                name="customer-name"
+                                placeholder="Enter your full name"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">
+                                Phone Number
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="+855 ..."
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="address">
+                                Delivery Address
+                            </label>
+
+                            <input
+                                type="text"
+                                id="address"
+                                name="address"
+                                placeholder="Street, Sangkat, Khan and city"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="delivery-time">
+                                Preferred Delivery Time
+                            </label>
+
+                            <input
+                                type="time"
+                                id="delivery-time"
+                                name="delivery-time"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="payment-method">
+                                Payment Method
+                            </label>
+
+                            <select
+                                id="payment-method"
+                                name="payment-method"
+                                required
+                            >
+                                <option value="">
+                                    Select payment method
+                                </option>
+
+                                <option value="cash">
+                                    Cash on Delivery
+                                </option>
+
+                                <option value="bank-transfer">
+                                    Bank Transfer
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="notes">
+                                Additional Notes
+                            </label>
+
+                            <textarea
+                                id="notes"
+                                name="notes"
+                                placeholder="Write delivery instructions here"
+                            ></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-submit">
+                        <button type="submit" class="btn">
+                            Submit Delivery Request
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>រសជាតិខ្មែរ</h3>
+
+                    <p>
+                        Authentic Khmer food and friendly service in a
+                        welcoming environment.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>Quick Links</h3>
+
+                    <ul class="footer-links">
+                        <li><a href="../menu/menu.html">Menu</a></li>
+
+                        <li>
+                            <a href="../services/reservation.html">
+                                Reservation
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../services/delivery.html">
+                                Delivery
+                            </a>
+                        </li>
+
+                        <li><a href="../general/faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Contact</h3>
+
+                    <p>Phnom Penh, Cambodia</p>
+                    <p>Phone: +855 12 345 678</p>
+                    <p>Email: info@khmertaste.com</p>
+                </div>
+            </div>
+
+            <div class="copyright">
+                © 2026 Khmer Taste. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="checkmark">✓</div>
+
+            <h2>Delivery Request Submitted!</h2>
+
+            <p>
+                Thank you for choosing Khmer Taste Delivery.<br>
+                Your request has been received successfully.
+            </p>
+
+            <div class="info-box">
+                <strong>Status:</strong><br>
+                Our delivery team will prepare your order shortly.
+            </div>
+
+            <button id="closeModal" class="btn-submit">
+                Back to Services
+            </button>
+        </div>
+    </div>
+
+    <script>
+        const form = document.querySelector(".form-card");
+        const modal = document.getElementById("successModal");
+        const closeBtn = document.getElementById("closeModal");
+
+        form.addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            modal.style.display = "flex";
+
+            form.reset();
+        });
+
+        closeBtn.addEventListener("click", function() {
+            window.location.href = "services.html";
+        });
+    </script>
+
+</body>
+</html>

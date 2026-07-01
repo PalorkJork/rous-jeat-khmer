@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Catering Service | Khmer Taste</title>
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="../../assets/images/branding/favicon.png"
+    >
+
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/forms.css">
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container navbar">
+            <a href="../index.html" class="logo">
+                រសជាតិខ្មែរ
+            </a>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../general/about.html">About</a></li>
+                    <li><a href="../menu/menu.html">Menu</a></li>
+                    <li><a href="../services/services.html">Services</a></li>
+                    <li><a href="../general/gallery.html">Gallery</a></li>
+                    <li><a href="../general/contact.html">Contact</a></li>
+                    <li><a href="../account/login.html">Login</a></li>
+
+                    <li>
+                        <a href="../account/register.html" class="btn">
+                            Register
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-banner services-banner">
+            <div class="container">
+                <h1>Catering Service</h1>
+                <p>សេវាកម្មរៀបចំអាហារ</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="service-detail-grid">
+                    <div class="service-detail-image">
+                        <img
+                            src="../../assets/images/services/catering-service.jpg"
+                            alt="Khmer food catering service"
+                        >
+                    </div>
+
+                    <div class="service-detail-content">
+                        <h2>Khmer Food for Your Special Event</h2>
+
+                        <p>
+                            Choose traditional Cambodian food packages for
+                            meetings, weddings, birthday parties and family
+                            celebrations.
+                        </p>
+
+                        <ul class="info-list">
+                            <li>
+                                <span>✓</span>
+                                Catering packages for small and large events
+                            </li>
+
+                            <li>
+                                <span>✓</span>
+                                Traditional Khmer dishes and desserts
+                            </li>
+
+                            <li>
+                                <span>✓</span>
+                                Flexible menu options based on your budget
+                            </li>
+
+                            <li>
+                                <span>✓</span>
+                                Food preparation, delivery and table setup
+                            </li>
+                        </ul>
+
+                        <a href="../menu/menu.html" class="btn">
+                            Browse Menu
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <div class="container">
+                <form class="form-card" action="#" method="post">
+                    <h2>Catering Request Received!</h2>
+
+                    <p class="form-description">
+                        បំពេញព័ត៌មានសម្រាប់សេវាកម្មរៀបចំអាហារ
+                    </p>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="customer-name">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="customer-name"
+                                name="customer-name"
+                                placeholder="Enter your full name"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">
+                                Phone Number
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="+855 ..."
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="event-type">
+                                Event Type
+                            </label>
+
+                            <select
+                                id="event-type"
+                                name="event-type"
+                                required
+                            >
+                                <option value="">
+                                    Select event type
+                                </option>
+
+                                <option value="wedding">
+                                    Wedding
+                                </option>
+
+                                <option value="birthday">
+                                    Birthday Party
+                                </option>
+
+                                <option value="meeting">
+                                    Business Meeting
+                                </option>
+
+                                <option value="family">
+                                    Family Celebration
+                                </option>
+
+                                <option value="other">
+                                    Other Event
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="guest-count">
+                                Number of Guests
+                            </label>
+
+                            <input
+                                type="number"
+                                id="guest-count"
+                                name="guest-count"
+                                min="1"
+                                placeholder="Example: 50"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="event-date">
+                                Event Date
+                            </label>
+
+                            <input
+                                type="date"
+                                id="event-date"
+                                name="event-date"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="event-time">
+                                Event Time
+                            </label>
+
+                            <input
+                                type="time"
+                                id="event-time"
+                                name="event-time"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="event-location">
+                                Event Location
+                            </label>
+
+                            <input
+                                type="text"
+                                id="event-location"
+                                name="event-location"
+                                placeholder="Enter your event location"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="budget">
+                                Estimated Budget
+                            </label>
+
+                            <select
+                                id="budget"
+                                name="budget"
+                                required
+                            >
+                                <option value="">
+                                    Select your budget
+                                </option>
+
+                                <option value="100-300">
+                                    $100 - $300
+                                </option>
+
+                                <option value="301-600">
+                                    $301 - $600
+                                </option>
+
+                                <option value="601-1000">
+                                    $601 - $1,000
+                                </option>
+
+                                <option value="1000-plus">
+                                    More than $1,000
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="notes">
+                                Additional Notes
+                            </label>
+
+                            <textarea
+                                id="notes"
+                                name="notes"
+                                placeholder="Tell us about your event, preferred dishes or special requests"
+                            ></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-submit">
+                        <button type="submit" class="btn">
+                            Submit Catering Request
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>រសជាតិខ្មែរ</h3>
+
+                    <p>
+                        Authentic Khmer food and friendly service in a
+                        welcoming environment.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>Quick Links</h3>
+
+                    <ul class="footer-links">
+                        <li><a href="../menu/menu.html">Menu</a></li>
+
+                        <li>
+                            <a href="../services/reservation.html">
+                                Reservation
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../services/delivery.html">
+                                Delivery
+                            </a>
+                        </li>
+
+                        <li><a href="../general/faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Contact</h3>
+
+                    <p>Phnom Penh, Cambodia</p>
+                    <p>Phone: +855 12 345 678</p>
+                    <p>Email: info@khmertaste.com</p>
+                </div>
+            </div>
+
+            <div class="copyright">
+                © 2026 Khmer Taste. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="checkmark">✓</div>
+
+            <h2>Catering Request Submitted!</h2>
+
+            <p>
+                 Thank you for choosing Khmer Taste Catering.<br>
+                Our team will contact you soon to discuss your event.
+            </p>
+
+            <div class="info-box">
+                <strong>Status:</strong><br>
+                Your catering request has been received.
+            </div>
+
+            <button id="closeModal" class="btn-submit">
+                Back to Services
+            </button>
+        </div>
+    </div>
+
+    <script>
+        const form = document.querySelector(".form-card");
+        const modal = document.getElementById("successModal");
+        const closeBtn = document.getElementById("closeModal");
+
+        form.addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            modal.style.display = "flex";
+
+            form.reset();
+        });
+
+        closeBtn.addEventListener("click", function() {
+            window.location.href = "services.html";
+        });
+    </script>
+
+</body>
+</html>
